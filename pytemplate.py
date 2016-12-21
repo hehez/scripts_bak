@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 10/23/16
+# @Time    : 12/20/16 9:39PM
 # @Author  : hehez
-# @Site    : 
 # @File    : main.py
-# @Software: PyCharm Edu
+# @Version : 1.0.0
 
 
 """
