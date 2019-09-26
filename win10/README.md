@@ -2,7 +2,13 @@
 [_metadata_:date]:      - "09/25/2019"
 
 # Windows 10 Dev Setup
-[![GitHub license](https://img.shields.io/github/license/hehez/scripts_bak.svg?style=plastic&logo=appveyor)](https://github.com/hehez/scripts_bak/blob/master/LICENSE)
+[![Chocolatey](https://img.shields.io/github/license/hehez/scripts_bak?style=plastic)](https://github.com/hehez/scripts_bak/blob/master/LICENSE)
+![Chocolatey](https://img.shields.io/chocolatey/v/git?style=plastic&label=git&logo=git)
+![Chocolatey](https://img.shields.io/chocolatey/v/chocolatey?style=plastic)
+![Chocolatey](https://img.shields.io/chocolatey/v/powershell?style=plastic&label=powershell&logo=powershell)
+![Chocolatey](https://img.shields.io/chocolatey/v/fluent-terminal?label=fluent-terminal&style=plastic)
+![Chocolatey](https://img.shields.io/chocolatey/v/vscode?label=vscode&style=plastic)
+![Chocolatey](https://img.shields.io/chocolatey/v/poshgit?label=poshgit&style=plastic)
 
 ## Checking PowerShell version
 > Source: [5.1 Profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-5.1) 
@@ -32,6 +38,11 @@ Major  Minor  Build  Revision
 ### Install with powershell
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+### Checking Chocolatey version
+```powershell
+choco -v
 ```
 
 ### Upgrading Chocolatey
