@@ -5,7 +5,7 @@ Set-Theme Honukai
 
 
 ## Hide your username@domain
-$DefaultUser = 'hehez'
+$DefaultUser = '<username>'
 
 ## Configuration
 ## Setup date and timestamp
