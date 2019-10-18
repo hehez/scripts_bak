@@ -121,6 +121,11 @@ To open the profile of the current user in the current PowerShell host applicati
 notepad $PROFILE
 ```
 
+To refresh the environment without closing the terminal, same as `source ~/.bashrc` on Mac
+```
+. $PROFILE
+```
+
 Append the following lines to your PowerShell profile
 > Example: [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1#L2-L8)
 ```
@@ -179,4 +184,34 @@ git remote show origin
 Change it to 
 ```powershell
 git remote set-url origin git+ssh://git@github.com/<username>/<reopname>.git
+```
+
+## Enable Hyper-V using PowerShell
+> Source: [Instructions](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) 
+### Prerequisites
+### Open a PowerShell console as Administrator
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
+
+## Sudo for Windows
+> Source: [Sudo for Windows](http://blog.lukesampson.com/sudo-for-windows)  
+> Source: [script](https://github.com/lukesampson/psutils/blob/master/sudo.ps1)
+
+If you don't already have `Scoop`, you need to install that first (using Powershell):
+```powershell
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
+# enable powershell, if you haven't already
+set-executionpolicy unrestricted -s cu -f
+```
+
+Then, to install sudo itself:
+```powershell
+scoop install sudo
+```
+
+If you don't want to install `Scoop`, run script with args
+```powershell
+.\sudo.ps1 mkdir "c:\program files\new"
 ```
