@@ -130,3 +130,31 @@ version `6.9.0` comes with NodeJs 10
 ```bash
 npm -v
 ```
+
+## SSH into Ubuntu (if it's vm guest OS)
+If vm is Ubuntu and hosted in Virtual box, you can ssh into guest (Ubuntu) from host.
+### Install SSH
+Go to vm guest OS,
+```bash
+sudo apt-get install openssh-server
+```
+
+### Disable firewall
+```bash
+sudo ufw disable
+```
+
+### Vm settings
+Go to Settings -> Network -> Advanced -> Port Forwarding, create a new rule with args, any host port ie. `2322`
+```bash
+Protocol: TCP
+Host Port: 2322
+Guest Port: 22
+```
+
+And run the command line in Host OS and enter password
+```bash
+ssh <username>@localhost -p 2322
+```
+
+### SSH VM OS using vscode
