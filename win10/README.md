@@ -215,3 +215,6 @@ If you don't want to install `Scoop`, run script with args
 ```powershell
 .\sudo.ps1 mkdir "c:\program files\new"
 ```
+
+## Remapping keys
+> Source: [sharpkeys](https://github.com/randyrants/sharpkeys) 
