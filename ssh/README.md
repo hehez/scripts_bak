@@ -14,7 +14,7 @@ b@B's password:
 cat ~/.ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
 b@B's password:
 
-a@A:~> ssh b@B
+ssh b@B
 ```
 
 Boom!!!
