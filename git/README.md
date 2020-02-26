@@ -11,9 +11,11 @@ git config --global alias.st status
 ```
 
 ## Advanced Git alias
+```bash
 git config --global alias.pushup '!sh -c "git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"'
 git config --global alias.oops 'reset --soft HEAD^'
 git config --global alias.commend 'commit --amend --no-edit'
+```
 
 ## Git config
 ### Basic
