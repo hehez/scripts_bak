@@ -15,6 +15,7 @@ git config --global alias.st status
 git config --global alias.pushup '!sh -c "git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"'
 git config --global alias.oops 'reset --soft HEAD^'
 git config --global alias.commend 'commit --amend --no-edit'
+git config --global alias.cp cherry-pick
 ```
 
 ## Git config
