@@ -78,7 +78,7 @@ sudo apt install docker.io
 
 ### Install Docker compose
 ```bash
-sudo apt  install docker-compose
+sudo apt install docker-compose
 ```
 
 ### Add current user to docker group

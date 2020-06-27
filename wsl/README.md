@@ -7,6 +7,42 @@ Not until May 2020, before you can try [Windows Insider builds](https://insider.
 > Source: [Shipping a Linux Kernel with Windows](https://devblogs.microsoft.com/commandline/shipping-a-linux-kernel-with-windows/)\
 > Source: [WSL2 will be generally available in Windows 10, version 2004](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/)
 
+Release now
+> Source: [Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+## Enable the 'Virtual Machine Platform' optional component
+Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.
+
+Open PowerShell as Administrator and run:
+```PowerShell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+Restart your machine to complete the WSL install and update to WSL 2.
+
+## Set WSL 2 as your default version
+Run the following command in PowerShell to set WSL 2 as the default version when installing a new Linux distribution:
+```PowerShell
+wsl --set-version Ubuntu 2
+wsl --set-default-version 2
+```
+
+Check WSL
+```PowerShell
+wsl --list --verbose
+```
+```
+wsl -l -v
+```
+
+# Windows 10 WSL1 Move to other directory
+> Source: [solution 1](https://superuser.com/questions/1113906/can-i-move-the-linux-subsystem-to-a-different-drive)\
+> Source: [solution 2](https://stackoverflow.com/questions/38779801/move-wsl-bash-on-windows-root-filesystem-to-another-hard-drive)\
+> Source: [auto move](https://github.com/pxlrbt/move-wsl)
+
+Unregister WSL so we can register it again at new location
+```PowerShell
+wsl --unregister $WSL_NAME &>/dev/null
+```
 
 # Windows 10 WSL1 Setup
 > Source: [Mircosoft](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
