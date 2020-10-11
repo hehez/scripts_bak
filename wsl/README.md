@@ -83,5 +83,18 @@ Open the Microsoft Store and choose your favorite Linux distribution. At the mom
     Pengwin Enterprise
     Alpine WSL
 
+## FAQ
+### CAN NOT open the given directory in the vs code insiders explorer when logged in as a non-root user(w/ sudo privileges) 
+> Source [multi user support](https://github.com/microsoft/vscode-remote-release/issues/286) \
+> Source [WSL2 starting as root when starting with wsl.exe](https://github.com/microsoft/WSL/issues/4276#issuecomment-509364493)
+```
+To resolve your immediate issue please see issue #3974 .
+Specifically go to:
+
+Find your UID for your username in your Linux distro typing in the command id -u <yourUserName>. Remember this value.
+Open registry edit and navigate to HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\{MY-UUID}. Please be careful when editing registry keys!
+Replace the DefaultUid value with the UID value of the user in your distro.
+```
+
 ## WSL Command Reference
 > Source: [Command Reference for Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/reference)
