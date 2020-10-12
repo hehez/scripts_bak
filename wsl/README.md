@@ -83,6 +83,11 @@ Open the Microsoft Store and choose your favorite Linux distribution. At the mom
     Pengwin Enterprise
     Alpine WSL
 
+### Git Credential Manager setup
+```Shell
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+```
+
 ## FAQ
 ### CAN NOT open the given directory in the vs code insiders explorer when logged in as a non-root user(w/ sudo privileges) 
 > Source [multi user support](https://github.com/microsoft/vscode-remote-release/issues/286) \
