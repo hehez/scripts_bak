@@ -41,3 +41,10 @@ IdentityFile <path_to_local_id_src>
 ```
 
 Login remote OS via vscode w/o passowrd
+
+# FAQ
+
+### Tab(for completion) in integrated terminal moves focus out of terminal
+> Source: [solution](https://github.com/Microsoft/vscode/issues/25129)
+
+Figuring out, it was `Ctrl+M` pressed in editor. Guess that's not a bug then.

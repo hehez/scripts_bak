@@ -37,6 +37,8 @@ npm install -g gatsby-cli
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
+# TypeScript and Gatsby
+
 # FAQ
 ### If nvm is previously installed by root user, will get error
 ```Shell
