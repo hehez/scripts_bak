@@ -55,6 +55,35 @@ choco upgrade chocolatey
 choco install fluent-terminal
 ```
 
+## Installing windows terminal
+> Source: [Instructions](https://learn.microsoft.com/en-us/windows/terminal/install) \
+> Source: [Set Windows Terminal Starting Directory for WSL](https://goulet.dev/posts/how-to-set-windows-terminal-starting-directory/)
+
+### Setup windows terminal
+In windows terminal `settings > Startup`, set Ubuntu as defalut profile
+
+`settings > Ubuntu > Command line`, open Ubuntu terminal
+```bash
+wsl.exe -d Ubuntu
+```
+
+`settings > Ubuntu > Starting directory`, default directory after login WSL
+```bash
+//wsl$/Ubuntu/root/
+```
+
+### Installing Oh my zsh
+Oh my zsh setup 
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Theme setup
+> Source: [Nerd Fonts](https://github.com/romkatv/powerlevel10k)
+
+### (Optional) Change font
+> Source: [Nerd Fonts](https://www.nerdfonts.com/)
+
 ## Installing Git
 ### Install Git
 ```powershell
