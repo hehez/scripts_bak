@@ -37,12 +37,29 @@ wsl -l -v
 # Windows 10 WSL1 Move to other directory
 > Source: [solution 1](https://superuser.com/questions/1113906/can-i-move-the-linux-subsystem-to-a-different-drive)\
 > Source: [solution 2](https://stackoverflow.com/questions/38779801/move-wsl-bash-on-windows-root-filesystem-to-another-hard-drive)\
+> Source: [solution 3](https://blog.iany.me/2020/06/move-wsl-to-another-drive/)\
 > Source: [auto move](https://github.com/pxlrbt/move-wsl)
 
 Unregister WSL so we can register it again at new location
 ```PowerShell
 wsl --unregister $WSL_NAME &>/dev/null
 ```
+
+# Windows 10 OS re-install, how to import existing WSL2 filesystem to new OS
+Create a target folder in D disk
+```
+D:
+mkdir wsl
+cd wsl
+mkdir Ubuntu
+wsl --import Ubuntu Ubuntu ubuntu.tar 
+```
+`wsl --import Ubuntu Ubuntu ubuntu.tar` : 
+ - The first Ubuntu is the new created instance name. 
+ - The second Ubuntu is the instance saved location. 
+ - The last parameter is the file created by `wsl --export`. This will import ubuntu.tar and use D:\WSL\Ubuntu to save the WSL instance data.
+
+Once new WSL instance created, replace with old `ext4.vhdx`
 
 # Windows 10 WSL1 Setup
 > Source: [Mircosoft](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
