@@ -4,6 +4,12 @@
 
 # Git Dev Setup
 
+## Table of Contents
+
+- [Git Alias](#git-alias)
+- [Advanced Git Alias](#advanced-git-alias)
+- [Git Config](#git-config)
+
 ## Git alias
 
 ```bash
