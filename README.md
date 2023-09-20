@@ -1,10 +1,12 @@
-A set of scripts
-============
+[_metadata_:author]: -
+[_metadata_:date]: - "09/16/2023"
+[_metadata_:update]: - "09/16/2023"
 
- * **`pytemplate.py`**
- 
- > A template python script to create a new python with self-defined contents
+# A set of scripts to setup
 
- * **`Markdown`**
- 
- > Examples of Markdown
+## Table of Contents
+
+- [Operating System](OS/README.md)
+  - [MacOS](OS/Mac/README.md)
+  - [Windows](OS/Windows/README.md)
+  - [Linus](OS/Windows/README.md)
